@@ -1,0 +1,96 @@
+// Bank Account Opening for clint //
+
+package bankaccountopen;
+
+public class Account
+	{
+		private long acno;
+		static long count = 234569023l;
+		private String name;
+		private String gender;
+		private String address;
+		private long number;
+		private long uidnum;
+		Account (String name,String gender,String address,long number,long uidnum)
+		{
+			acno= ++count;
+			this.name=name;
+			this.gender=gender;
+			this.address=address;
+			this.number=number;
+			this.uidnum=uidnum;
+		}
+		public long getAcno() {
+			return acno;
+		}
+		public void setAcno(long acno) {
+			this.acno = acno;
+		}
+		public static long getCount() {
+			return count;
+		}
+		public static void setCount(long count) {
+			Account.count = count;
+		}
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public String getGender() {
+			return gender;
+		}
+		public void setGender(String gender) {
+			this.gender = gender;
+		}
+		public String getAddress() {
+			return address;
+		}
+		public void setAddress(String address) {
+			this.address = address;
+		}
+		public long getNumber() {
+			return number;
+		}
+		public void setNumber(long number) {
+			this.number = number;
+		}
+		public long getUidnum() {
+			return uidnum;
+		}
+		public void setUidnum(long uidnum) {
+			this.uidnum = uidnum;
+		}
+		
+		
+	}
+
+///// Main Method /////
+
+
+package bankaccountopen;
+
+public class Bank {
+	public static void main(String[] args) {
+		Account a1 = new Account("SOMASHEKHAR BM","Male","Bangalore",9108350140l,989333795283l);
+		System.out.println("Account Number :"+a1.getAcno()+", Account Holder Name :"+a1.getName()+ ", Gender :"+a1.getGender()+ ", Address :"+a1.getAddress()+", Phone Number :"+a1.getNumber()+ ", Addhar Number :"+a1.getUidnum());
+		/*System.out.println("--------------------------------------------------------------------------------------------------------------------");
+		Account a2 = new Account(234123459l,"RAJU BM","Male","Bangalore",9206375374l,123456789123l);
+		System.out.println("Account Number :"+a2.getAcno()+", Account Holder Name :"+a2.getName()+ ", Gender :"+a2.getGender()+ ", Address :"+a2.getAddress()+", Phone Number :"+a2.getNumber()+ ", Addhar Number :"+a2.getUidnum());
+		System.out.println("--------------------------------------------------------------------------------------------------------------------");
+		//Account a3 = new Account(234123460l,"SUHAS C","Male","Bangalore",8618219676l,984552222235l);
+		System.out.println("Account Number :"+a3.getAcno()+", Account Holder Name :"+a3.getName()+ ", Gender :"+a3.getGender()+ ", Address :"+a3.getAddress()+", Phone Number :"+a3.getNumber()+ ", Addhar Number :"+a3.getUidnum());
+		System.out.println("--------------------------------------------------------------------------------------------------------------------");
+		//Account a4 = new Account(234123461l,"AKHIL GOWD","Male","ANDRA PRADESH",63027722945l,788933795283l);
+		System.out.println("Account Number :"+a4.getAcno()+", Account Holder Name :"+a4.getName()+ ", Gender :"+a4.getGender()+ ", Address :"+a4.getAddress()+", Phone Number :"+a4.getNumber()+ ", Addhar Number :"+a4.getUidnum());
+		System.out.println("--------------------------------------------------------------------------------------------------------------------");
+		//Account a5 = new Account(234123462l,"VENKY","Male","ANDRA PRADESH",6363560345l,778333795283l);
+		System.out.println("Account Number :"+a5.getAcno()+", Account Holder Name :"+a5.getName()+ ", Gender :"+a5.getGender()+ ", Address :"+a5.getAddress()+", Phone Number :"+a5.getNumber()+ ", Addhar Number :"+a5.getUidnum());
+		System.out.println("--------------------------------------------------------------------------------------------------------------------");*/
+		System.out.println(a1.getAcno());
+		Account a2 = new Account("SOMASHEKHAR BM","Male","Bangalore",9108350140l,989333795283l);
+		System.out.println(a2.getAcno());
+	}
+
+}
